@@ -44,7 +44,6 @@ export default function ProductPage() {
         id: product.id,
         name: translatedName,
         price: selectedVariant.price,
-        quantity: 1,
         variant: t(`productItems.variants.${selectedVariant.id}`) || selectedVariant.name,
         comment: comment || undefined,
       })

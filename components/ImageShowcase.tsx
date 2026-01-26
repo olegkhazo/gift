@@ -84,7 +84,7 @@ export default function ImageShowcase() {
               }`}
             >
               <img
-                src={`https://placehold.co/800x600/8B4513/FFFFFF?text=${encodeURIComponent(image.category)}`}
+                src={`https://placehold.co/800x600/8B4513/FFFFFF?text=${encodeURIComponent(categories.find(c => c.key === image.categoryKey)?.label || image.categoryKey)}`}
                 alt={image.alt}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 onLoad={(e) => {

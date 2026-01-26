@@ -45,7 +45,6 @@ function ProductCard({ product }: { product: typeof products[0] }) {
       id: product.id,
       name: translatedName,
       price: selectedVariant.price,
-      quantity: 1,
       variant: t(`productItems.variants.${selectedVariant.id}`) || selectedVariant.name,
     })
   }
