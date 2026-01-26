@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How It Works?",
+    "products": "Products",
+    "reviews": "Reviews",
+    "cart": "Cart"
+  },
+  "hero": {
+    "title": "Give your ill-wishers a",
+    "titleHighlight": "crappy and fragrant",
+    "titleEnd": "surprise.",
+    "description": "Tired of hypocritical colleagues, nasty bosses, or ex-lovers who broke your heart? Get your revenge in a unique and tasteful way! Introducing our one-of-a-kind service – eco-friendly manure delivery straight to your offender's doorstep!",
+    "cta": "Discover Products"
+  },
+  "features": {
+    "title": "We guarantee:",
+    "anonymity": {
+      "title": "Complete anonymity",
+      "description": "No one will ever know that you sent this \"surprise.\" Your payment details and sender's identity are hidden!"
+    },
+    "delivery": {
+      "title": "Fast delivery",
+      "description": "Your \"gift\" will be delivered anywhere in the world in no time."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works?",
+    "subtitle": "We ensure complete payment confidentiality. The recipient will never know who sent the gift.",
+    "step1": {
+      "title": "Choose a product",
+      "description": "Select the item you're interested in from our range."
+    },
+    "step2": {
+      "title": "Choose packaging",
+      "description": "Choose your preferred packaging for your product."
+    },
+    "step3": {
+      "title": "Write a comment",
+      "description": "Leave a special comment on your order that will be printed on the packaging."
+    },
+    "step4": {
+      "title": "Waiting for shipping",
+      "description": "After receiving your order, we send the package to the address you selected."
+    }
+  },
+  "products": {
+    "title": "Featured products",
+    "selectPackage": "Select Package:",
+    "addToCart": "Add to Cart",
+    "viewDetails": "View Details"
+  },
+  "gallery": {
+    "title": "Our Product Gallery",
+    "subtitle": "See our premium packaging options and product presentations"
+  },
+  "showcase": {
+    "title": "Product Showcase",
+    "subtitle": "Explore our range of packaging styles and presentation options",
+    "all": "All",
+    "packagingOptions": "Packaging Options",
+    "premiumBoxes": "Premium Boxes",
+    "customLabels": "Custom Labels",
+    "productDetails": "Product Details",
+    "features": {
+      "multipleSizes": "✓ Multiple package sizes",
+      "customLabels": "✓ Custom message labels",
+      "premiumBoxes": "✓ Premium gift boxes",
+      "ecoFriendly": "✓ Eco-friendly options"
+    },
+    "description": "All our products come with customizable labels and packaging options"
+  },
+  "video": {
+    "title": "See It In Action",
+    "subtitle": "Watch how our unique gift service works and see the reactions!",
+    "watch": "Watch Our Video",
+    "packaging": {
+      "title": "Premium Packaging",
+      "description": "See our various packaging options and how they look"
+    },
+    "presentation": {
+      "title": "Gift Presentation",
+      "description": "Watch how we prepare and present your special gift"
+    },
+    "reactions": {
+      "title": "Real Reactions",
+      "description": "See genuine reactions from recipients (with permission)"
+    }
+  },
+  "reviews": {
+    "title": "Our anonymous reviews",
+    "review1": "Sent this to a friend, and he was completely baffled! He couldn't figure out who sent it or why. Perfect for pranking someone!",
+    "review2": "This was brilliant! My coworker received it and spent a week trying to understand what to do with it. So much laughter!",
+    "review3": "The perfect prank gift! The recipient's reaction was priceless – total confusion and lots of laughs. I'll definitely order again!",
+    "review4": "The package was so absurd that you can't help but laugh. The recipient thought it was a mistake for days. Hilarious idea!",
+    "review5": "I didn't expect this kind of reaction! My friend was completely shocked and speechless. Awesome idea for a funny surprise!"
+  },
+  "productItems": {
+    "theGoodShit": {
+      "name": "The Good Shit",
+      "description": "Premium quality manure that will make a lasting impression."
+    },
+    "horsePower": {
+      "name": "Horse Power",
+      "description": "Straight from the stable, this one packs a punch!"
+    },
+    "theGoldenPoo": {
+      "name": "The Golden Poo",
+      "description": "A golden opportunity for a memorable gift experience."
+    },
+    "doubleDung": {
+      "name": "Double Dung",
+      "description": "Double the fun, double the surprise!"
+    },
+    "variants": {
+      "small": "Small Package",
+      "medium": "Medium Package",
+      "large": "Large Package"
+    }
+  },
+  "cta": {
+    "title": "Don't know what to give someone who has everything?",
+    "description": "Give them something they definitely don't have – a premium portion of first-class crappy manure! This will be the most unforgettable and fragrant gift of their life!",
+    "subtitle": "Order now and make the world a little more… aromatic!",
+    "ps": "P.S. Remember, our manure isn't just a brilliant way to get revenge—it also makes an excellent fertilizer for gardens and plants! So if your target happens to be a gardening enthusiast, you'll be giving them a double gift!",
+    "button": "Order Now"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "No products in the cart.",
+    "total": "Total:",
+    "clear": "Clear Cart",
+    "checkout": "Proceed to Checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "empty": "Your cart is empty",
+    "continueShopping": "Continue shopping",
+    "recipientInfo": "Recipient Information",
+    "yourInfo": "Your Information (Anonymous)",
+    "orderSummary": "Order Summary",
+    "fullName": "Full Name",
+    "streetAddress": "Street Address",
+    "city": "City",
+    "zipCode": "ZIP Code",
+    "country": "Country",
+    "yourName": "Your Name",
+    "email": "Email",
+    "phone": "Phone",
+    "confidential": "This information will be kept confidential and never shared with the recipient.",
+    "placeOrder": "Place Order",
+    "processing": "Processing...",
+    "quantity": "Qty:"
+  },
+  "footer": {
+    "customerService": "Customer Service",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "contactUs": "Contact Us",
+    "about": "About",
+    "rights": "All rights reserved.",
+    "developed": "Developed with 💩 by Restart IT"
+  },
+  "productPage": {
+    "back": "← Back to products",
+    "choosePackaging": "Choose Packaging:",
+    "writeComment": "Write a comment (optional):",
+    "commentPlaceholder": "Leave a special comment that will be printed on the packaging..."
+  },
+  "orderSuccess": {
+    "title": "Order Placed Successfully!",
+    "message": "Your \"gift\" is on its way! The recipient will never know who sent it. 😏",
+    "confirmation": "You will receive a confirmation email shortly with your order details.",
+    "continueShopping": "Continue Shopping"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "home": "Domů",
+    "howItWorks": "Jak to funguje?",
+    "products": "Produkty",
+    "reviews": "Recenze",
+    "cart": "Košík"
+  },
+  "hero": {
+    "title": "Dejte svým nepřátelům",
+    "titleHighlight": "hnusný a voňavý",
+    "titleEnd": "překvapení.",
+    "description": "Unavili vás pokrytečtí kolegové, protivní šéfové nebo bývalí milenci, kteří vám zlomili srdce? Pomstěte se jedinečným a vkusným způsobem! Představujeme naši jedinečnou službu – ekologické dodání hnoje přímo na práh vašeho pachatele!",
+    "cta": "Objevit produkty"
+  },
+  "features": {
+    "title": "Zaručujeme:",
+    "anonymity": {
+      "title": "Úplná anonymita",
+      "description": "Nikdo se nikdy nedozví, že jste poslali toto \"překvapení.\" Vaše platební údaje a identita odesílatele jsou utajeny!"
+    },
+    "delivery": {
+      "title": "Rychlé doručení",
+      "description": "Váš \"dárek\" bude doručen kamkoli na světě v rekordním čase."
+    }
+  },
+  "howItWorks": {
+    "title": "Jak to funguje?",
+    "subtitle": "Zajišťujeme úplnou důvěrnost plateb. Příjemce se nikdy nedozví, kdo dar poslal.",
+    "step1": {
+      "title": "Vyberte produkt",
+      "description": "Vyberte položku, která vás zajímá z našeho sortimentu."
+    },
+    "step2": {
+      "title": "Vyberte balení",
+      "description": "Vyberte si preferované balení pro váš produkt."
+    },
+    "step3": {
+      "title": "Napište komentář",
+      "description": "Zanechte speciální komentář k vaší objednávce, který bude vytištěn na obalu."
+    },
+    "step4": {
+      "title": "Čekání na odeslání",
+      "description": "Po obdržení vaší objednávky odešleme balíček na adresu, kterou jste vybrali."
+    }
+  },
+  "products": {
+    "title": "Doporučené produkty",
+    "selectPackage": "Vyberte balení:",
+    "addToCart": "Přidat do košíku",
+    "viewDetails": "Zobrazit detaily"
+  },
+  "gallery": {
+    "title": "Naše galerie produktů",
+    "subtitle": "Podívejte se na naše prémiové možnosti balení a prezentace produktů"
+  },
+  "showcase": {
+    "title": "Prezentace produktů",
+    "subtitle": "Prozkoumejte naši škálu stylů balení a možností prezentace",
+    "all": "Vše",
+    "packagingOptions": "Možnosti balení",
+    "premiumBoxes": "Prémiové krabice",
+    "customLabels": "Vlastní štítky",
+    "productDetails": "Detaily produktu",
+    "features": {
+      "multipleSizes": "✓ Více velikostí balení",
+      "customLabels": "✓ Vlastní textové štítky",
+      "premiumBoxes": "✓ Prémiové dárkové krabice",
+      "ecoFriendly": "✓ Ekologické možnosti"
+    },
+    "description": "Všechny naše produkty přicházejí s přizpůsobitelnými štítky a možnostmi balení"
+  },
+  "video": {
+    "title": "Podívejte se na akci",
+    "subtitle": "Sledujte, jak naše jedinečná dárková služba funguje a podívejte se na reakce!",
+    "watch": "Sledovat naše video",
+    "packaging": {
+      "title": "Prémiové balení",
+      "description": "Podívejte se na naše různé možnosti balení a jak vypadají"
+    },
+    "presentation": {
+      "title": "Prezentace dárku",
+      "description": "Sledujte, jak připravujeme a prezentujeme váš speciální dárek"
+    },
+    "reactions": {
+      "title": "Skutečné reakce",
+      "description": "Podívejte se na skutečné reakce příjemců (s povolením)"
+    }
+  },
+  "reviews": {
+    "title": "Naše anonymní recenze",
+    "review1": "Poslal jsem to příteli a byl úplně zmatený! Nemohl přijít na to, kdo to poslal nebo proč. Perfektní na prankování někoho!",
+    "review2": "To bylo skvělé! Můj kolega to dostal a strávil týden snahou pochopit, co s tím dělat. Tolik smíchu!",
+    "review3": "Perfektní prank dárek! Reakce příjemce byla k nezaplacení – úplné zmatení a spousta smíchu. Určitě znovu objednám!",
+    "review4": "Balíček byl tak absurdní, že se nemůžete ubránit smíchu. Příjemce si myslel, že to byla chyba několik dní. Úžasný nápad!",
+    "review5": "Nečekal jsem takovou reakci! Můj přítel byl úplně šokovaný a bez řeči. Skvělý nápad na vtipné překvapení!"
+  },
+  "productItems": {
+    "theGoodShit": {
+      "name": "Dobrý hnůj",
+      "description": "Prémiové kvalitní hnojivo, které zanechá trvalý dojem."
+    },
+    "horsePower": {
+      "name": "Koňská síla",
+      "description": "Přímo ze stáje, tento má pořádnou sílu!"
+    },
+    "theGoldenPoo": {
+      "name": "Zlatý hnůj",
+      "description": "Zlatá příležitost pro nezapomenutelný dárkový zážitek."
+    },
+    "doubleDung": {
+      "name": "Dvojitý hnůj",
+      "description": "Dvojnásobná zábava, dvojnásobné překvapení!"
+    },
+    "variants": {
+      "small": "Malé balení",
+      "medium": "Střední balení",
+      "large": "Velké balení"
+    }
+  },
+  "cta": {
+    "title": "Nevíte, co dát někomu, kdo má všechno?",
+    "description": "Dejte mu něco, co rozhodně nemá – prémiovou porci prvotřídního hnoje! Toto bude nejnezapomenutelnější a nejvoňavější dárek jeho života!",
+    "subtitle": "Objednejte nyní a udělejte svět trochu více... aromatickým!",
+    "ps": "P.S. Pamatujte, náš hnůj není jen skvělý způsob, jak se pomstít – je to také vynikající hnojivo pro zahrady a rostliny! Takže pokud je váš cíl nadšenec do zahradničení, dáváte mu dvojitý dárek!",
+    "button": "Objednat nyní"
+  },
+  "cart": {
+    "title": "Nákupní košík",
+    "empty": "V košíku nejsou žádné produkty.",
+    "total": "Celkem:",
+    "clear": "Vymazat košík",
+    "checkout": "Pokračovat k pokladně"
+  },
+  "checkout": {
+    "title": "Pokladna",
+    "empty": "Váš košík je prázdný",
+    "continueShopping": "Pokračovat v nákupu",
+    "recipientInfo": "Informace o příjemci",
+    "yourInfo": "Vaše informace (anonymní)",
+    "orderSummary": "Souhrn objednávky",
+    "fullName": "Celé jméno",
+    "streetAddress": "Ulice a číslo",
+    "city": "Město",
+    "zipCode": "PSČ",
+    "country": "Země",
+    "yourName": "Vaše jméno",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "confidential": "Tyto informace budou důvěrné a nikdy nebudou sdíleny s příjemcem.",
+    "placeOrder": "Odeslat objednávku",
+    "processing": "Zpracovávání...",
+    "quantity": "Množství:"
+  },
+  "footer": {
+    "customerService": "Zákaznický servis",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "terms": "Obchodní podmínky",
+    "contactUs": "Kontaktujte nás",
+    "about": "O nás",
+    "rights": "Všechna práva vyhrazena.",
+    "developed": "Vytvořeno s 💩 společností Restart IT"
+  },
+  "productPage": {
+    "back": "← Zpět na produkty",
+    "choosePackaging": "Vyberte balení:",
+    "writeComment": "Napište komentář (volitelné):",
+    "commentPlaceholder": "Zanechte speciální komentář, který bude vytištěn na obalu..."
+  },
+  "orderSuccess": {
+    "title": "Objednávka úspěšně odeslána!",
+    "message": "Váš \"dárek\" je na cestě! Příjemce se nikdy nedozví, kdo ho poslal. 😏",
+    "confirmation": "Brzy obdržíte potvrzovací e-mail s detaily vaší objednávky.",
+    "continueShopping": "Pokračovat v nákupu"
+  }
+}
