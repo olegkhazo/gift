@@ -3,16 +3,12 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import enTranslations from '@/locales/en.json'
 import csTranslations from '@/locales/cs.json'
-import deTranslations from '@/locales/de.json'
-import ruTranslations from '@/locales/ru.json'
 
-type Language = 'en' | 'cs' | 'de' | 'ru'
+type Language = 'en' | 'cs'
 
 const translations = {
   en: enTranslations,
   cs: csTranslations,
-  de: deTranslations,
-  ru: ruTranslations,
 }
 
 interface I18nContextType {
@@ -29,12 +25,12 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     // Load language from localStorage or detect from browser
     const savedLang = localStorage.getItem('language') as Language
-    if (savedLang && ['en', 'cs', 'de', 'ru'].includes(savedLang)) {
+    if (savedLang && ['en', 'cs'].includes(savedLang)) {
       setLanguageState(savedLang)
     } else {
       // Detect browser language
       const browserLang = navigator.language.split('-')[0]
-      if (['en', 'cs', 'de', 'ru'].includes(browserLang)) {
+      if (['en', 'cs'].includes(browserLang)) {
         setLanguageState(browserLang as Language)
       }
     }

@@ -7,8 +7,6 @@ import { FiGlobe, FiChevronDown } from 'react-icons/fi'
 const languages = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
   { code: 'cs', name: 'Čeština', flag: '🇨🇿' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
 ]
 
 export default function LanguageSwitcher() {
@@ -41,7 +39,7 @@ export default function LanguageSwitcher() {
               <button
                 key={lang.code}
                 onClick={() => {
-                  setLanguage(lang.code as 'en' | 'cs' | 'de' | 'ru')
+                  setLanguage(lang.code as 'en' | 'cs')
                   setIsOpen(false)
                 }}
                 className={`w-full text-left px-4 py-3 hover:bg-gray-50 transition flex items-center space-x-3 ${
