@@ -1,7 +1,7 @@
 'use client'
 
 import { useParams } from 'next/navigation'
-import { products } from '@/data/products'
+import { products, type ProductVariant } from '@/data/products'
 import { useCart } from '@/components/CartProvider'
 import { useState } from 'react'
 import Link from 'next/link'
@@ -15,7 +15,7 @@ export default function ProductPage() {
   const { addToCart } = useCart()
   const { t, language } = useI18n()
   const isCzech = language === 'cs'
-  const formatPrice = (variant: typeof product.variants[0]) =>
+  const formatPrice = (variant: ProductVariant) =>
     isCzech ? `${variant.priceCZK.toFixed(2)} Kč` : `€${variant.price.toFixed(2)}`
 
   if (!product) {
