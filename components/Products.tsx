@@ -8,7 +8,7 @@ import { useI18n } from '@/lib/i18n'
 
 export default function Products() {
   const { t } = useI18n()
-  
+
   return (
     <section id="products" className="py-12 sm:py-16 px-4 bg-white">
       <div className="container mx-auto">
@@ -26,10 +26,12 @@ export default function Products() {
 function ProductCard({ product }: { product: typeof products[0] }) {
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
   const { addToCart } = useCart()
-  const { t } = useI18n()
+  const { t, language } = useI18n()
 
-  // Get translated product name and description
-  // Map product IDs to translation keys
+  const isCzech = language === 'cs'
+  const formatPrice = (variant: typeof product.variants[0]) =>
+    isCzech ? `${variant.priceCZK.toFixed(2)} Kč` : `€${variant.price.toFixed(2)}`
+
   const productKeyMap: Record<string, string> = {
     'the-good-shit': 'theGoodShit',
     'horse-power': 'horsePower',
@@ -44,7 +46,7 @@ function ProductCard({ product }: { product: typeof products[0] }) {
     addToCart({
       id: product.id,
       name: translatedName,
-      price: selectedVariant.price,
+      price: isCzech ? selectedVariant.priceCZK : selectedVariant.price,
       variant: t(`productItems.variants.${selectedVariant.id}`) || selectedVariant.name,
     })
   }
@@ -53,9 +55,9 @@ function ProductCard({ product }: { product: typeof products[0] }) {
     <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
       <div className="p-4 sm:p-6">
         <h3 className="text-xl sm:text-2xl font-bold mb-2">{translatedName}</h3>
-        <p className="text-primary-600 text-xl sm:text-2xl font-bold mb-3 sm:mb-4">€{selectedVariant.price.toFixed(2)}</p>
+        <p className="text-primary-600 text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{formatPrice(selectedVariant)}</p>
         <p className="text-gray-600 mb-3 sm:mb-4 text-sm">{translatedDescription}</p>
-        
+
         <div className="mb-3 sm:mb-4">
           <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-2">
             {t('products.selectPackage')}
@@ -70,7 +72,7 @@ function ProductCard({ product }: { product: typeof products[0] }) {
           >
             {product.variants.map((variant) => (
               <option key={variant.id} value={variant.id}>
-                {t(`productItems.variants.${variant.id}`) || variant.name} - €{variant.price.toFixed(2)}
+                {t(`productItems.variants.${variant.id}`) || variant.name} - {formatPrice(variant)}
               </option>
             ))}
           </select>
