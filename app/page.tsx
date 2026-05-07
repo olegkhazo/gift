@@ -7,14 +7,11 @@ import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 import ProductGallery from '@/components/ProductGallery'
 import VideoSection from '@/components/VideoSection'
-import ImageShowcase from '@/components/ImageShowcase'
-
 export default function Home() {
   return (
     <main>
       <Hero />
       <Features />
-      <ImageShowcase />
       <HowItWorks />
       <Products />
       <ProductGallery />
