@@ -87,7 +87,9 @@ export default function CartProvider({ children }: { children: ReactNode }) {
 function CartSidebar() {
   const { cartItems, isCartOpen, toggleCart, updateQuantity, removeFromCart, clearCart } =
     useCart()
-  const { t } = useI18n()
+  const { t, language } = useI18n()
+  const isCzech = language === 'cs'
+  const fmt = (amount: number) => isCzech ? `${amount.toFixed(2)} Kč` : `€${amount.toFixed(2)}`
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0)
 
   if (!isCartOpen) return null
@@ -123,7 +125,7 @@ function CartSidebar() {
                         {item.variant && (
                           <p className="text-xs sm:text-sm text-gray-500">{item.variant}</p>
                         )}
-                        <p className="text-primary-600 font-bold text-sm sm:text-base">€{item.price.toFixed(2)}</p>
+                        <p className="text-primary-600 font-bold text-sm sm:text-base">{fmt(item.price)}</p>
                       </div>
                       <button
                         onClick={() => removeFromCart(`${item.id}-${item.variant || ''}`)}
@@ -164,7 +166,7 @@ function CartSidebar() {
               <div className="border-t pt-3 sm:pt-4 mb-4">
                 <div className="flex justify-between text-lg sm:text-xl font-bold mb-3 sm:mb-4">
                   <span>{t('cart.total')}</span>
-                  <span>€{total.toFixed(2)}</span>
+                  <span>{fmt(total)}</span>
                 </div>
                 <button
                   onClick={clearCart}

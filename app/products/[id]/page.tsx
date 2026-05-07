@@ -13,7 +13,10 @@ export default function ProductPage() {
   const [selectedVariant, setSelectedVariant] = useState(product?.variants[0])
   const [comment, setComment] = useState('')
   const { addToCart } = useCart()
-  const { t } = useI18n()
+  const { t, language } = useI18n()
+  const isCzech = language === 'cs'
+  const formatPrice = (variant: typeof product.variants[0]) =>
+    isCzech ? `${variant.priceCZK.toFixed(2)} Kč` : `€${variant.price.toFixed(2)}`
 
   if (!product) {
     return (
@@ -43,7 +46,7 @@ export default function ProductPage() {
       addToCart({
         id: product.id,
         name: translatedName,
-        price: selectedVariant.price,
+        price: isCzech ? selectedVariant.priceCZK : selectedVariant.price,
         variant: t(`productItems.variants.${selectedVariant.id}`) || selectedVariant.name,
         comment: comment || undefined,
       })
@@ -60,7 +63,7 @@ export default function ProductPage() {
         <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">{translatedName}</h1>
           <p className="text-xl sm:text-2xl text-primary-600 font-bold mb-4 sm:mb-6">
-            €{selectedVariant?.price.toFixed(2)}
+            {selectedVariant && formatPrice(selectedVariant)}
           </p>
           <p className="text-gray-700 mb-6 sm:mb-8 text-base sm:text-lg">{translatedDescription}</p>
 
@@ -79,7 +82,7 @@ export default function ProductPage() {
               >
                 {product.variants.map((variant) => (
                   <option key={variant.id} value={variant.id}>
-                    {t(`productItems.variants.${variant.id}`) || variant.name} - €{variant.price.toFixed(2)}
+                    {t(`productItems.variants.${variant.id}`) || variant.name} - {formatPrice(variant)}
                   </option>
                 ))}
               </select>
