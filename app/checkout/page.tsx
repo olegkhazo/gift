@@ -9,7 +9,9 @@ import { useI18n } from '@/lib/i18n'
 export default function CheckoutPage() {
   const { cartItems, clearCart } = useCart()
   const router = useRouter()
-  const { t } = useI18n()
+  const { t, language } = useI18n()
+  const isCzech = language === 'cs'
+  const fmt = (amount: number) => isCzech ? `${amount.toFixed(2)} Kč` : `€${amount.toFixed(2)}`
   const [formData, setFormData] = useState({
     recipientName: '',
     recipientAddress: '',
@@ -57,7 +59,7 @@ export default function CheckoutPage() {
           <div className="md:col-span-2">
             <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-4 sm:p-6 space-y-4 sm:space-y-6">
               <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">{t('checkout.recipientInfo')}</h2>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {t('checkout.fullName')} *
@@ -125,7 +127,7 @@ export default function CheckoutPage() {
               </div>
 
               <h2 className="text-xl sm:text-2xl font-semibold mt-6 sm:mt-8 mb-3 sm:mb-4">{t('checkout.yourInfo')}</h2>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {t('checkout.yourName')} *
@@ -189,14 +191,14 @@ export default function CheckoutPage() {
                       {item.variant && <p className="text-gray-500 text-xs">{item.variant}</p>}
                       <p className="text-gray-500 text-xs">{t('checkout.quantity')} {item.quantity}</p>
                     </div>
-                    <p className="font-medium flex-shrink-0">€{(item.price * item.quantity).toFixed(2)}</p>
+                    <p className="font-medium flex-shrink-0">{fmt(item.price * item.quantity)}</p>
                   </div>
                 ))}
               </div>
               <div className="border-t pt-3 sm:pt-4">
                 <div className="flex justify-between text-lg sm:text-xl font-bold">
                   <span>{t('cart.total')}</span>
-                  <span>€{total.toFixed(2)}</span>
+                  <span>{fmt(total)}</span>
                 </div>
               </div>
             </div>
