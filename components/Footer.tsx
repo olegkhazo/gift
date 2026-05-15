@@ -34,6 +34,11 @@ export default function Footer() {
                   {t('footer.privacyPolicy')}
                 </Link>
               </li>
+              <li>
+                <Link href="/terms" className="text-gray-300 hover:text-white transition text-sm sm:text-base">
+                  {t('footer.terms')}
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
