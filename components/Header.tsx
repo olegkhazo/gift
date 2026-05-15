@@ -10,7 +10,9 @@ import LanguageSwitcher from './LanguageSwitcher'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { cartItems, toggleCart } = useCart()
-  const { t } = useI18n()
+  const { t, language } = useI18n()
+  const isCzech = language === 'cs'
+  const fmt = (amount: number) => isCzech ? `${amount.toFixed(2)} Kč` : `€${amount.toFixed(2)}`
   const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0)
   const cartTotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0)
 
@@ -57,7 +59,7 @@ export default function Header() {
               </span>
             )}
             {cartCount > 0 && (
-              <span className="hidden md:inline">€{cartTotal.toFixed(2)}</span>
+              <span className="hidden md:inline">{fmt(cartTotal)}</span>
             )}
           </button>
 
