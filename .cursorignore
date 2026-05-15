@@ -5,3 +5,4 @@ app/products/[id]/page.tsx
 app/checkout/page.tsx
 app/page.tsx
 data/products.ts
+components/Header.tsx
