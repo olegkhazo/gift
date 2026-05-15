@@ -1,0 +1,7 @@
+# Prevent Cursor background agent from auto-modifying these files
+components/CartProvider.tsx
+components/Products.tsx
+app/products/[id]/page.tsx
+app/checkout/page.tsx
+app/page.tsx
+data/products.ts
