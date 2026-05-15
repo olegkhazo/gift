@@ -5,26 +5,11 @@ import { useI18n } from '@/lib/i18n'
 
 export default function Footer() {
   const { t } = useI18n()
-  
+
   return (
     <footer className="bg-gray-900 text-white py-8 sm:py-12 px-4">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
-          <div>
-            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{t('footer.customerService')}</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/privacy" className="text-gray-300 hover:text-white transition text-sm sm:text-base">
-                  {t('footer.privacyPolicy')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-gray-300 hover:text-white transition text-sm sm:text-base">
-                  {t('footer.terms')}
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{t('footer.contactUs')}</h3>
             <p className="text-gray-300 text-sm sm:text-base">
@@ -37,7 +22,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Info</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{t('footer.customerService')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/contact" className="text-gray-300 hover:text-white transition text-sm sm:text-base">
